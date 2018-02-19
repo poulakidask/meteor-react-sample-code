@@ -1,4 +1,4 @@
-# meteor-react-sample-code
+# meteor-react
 A starter project for React &amp; Meteor. 
 
 <p align="center">
