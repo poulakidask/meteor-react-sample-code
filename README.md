@@ -27,7 +27,7 @@ Open a browser and enjoy <br/>
 http://localhost:3000/    
 ```
 
-If the DateBase is empty it will create same sample data
+If the DateBase is empty it will create some sample data
 
 ## How it Works:
 
