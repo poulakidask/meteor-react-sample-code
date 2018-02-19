@@ -1,0 +1,35 @@
+/* CSS declarations go here */
+Header a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+Header a, #login-buttons a {
+  text-decoration: none;
+  margin-right: 10px;
+  color:inherit;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color: #3EC0CB;
+}
+
+.card span {
+	font-size: 20px!important;
+}
+
+
+
+.icon        { height:60px; width:60px; }
+button       { background:none; border:none; outline:none; }
+.vertical    {
+  transform-origin:50% 50%;
+  transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
+}
+.toggle-open .vertical {
+  transform: rotate(90deg);
+  transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
+}
+
+

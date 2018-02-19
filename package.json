@@ -1,0 +1,30 @@
+{
+  "name": "meteor-react-sample-code",
+  "version": "1.0.1",
+  "description": "Meteor React Sample Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poulakidask/meteor-react-sample-code.git"
+  },
+  "author": "Kosta Poulakidas <poulakidask@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poulakidask/meteor-react-sample-code/issues"
+  },
+  "homepage": "https://github.com/poulakidask/meteor-react-sample-code",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "material-ui": "^0.20.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-flexbox-grid": "^2.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-select": "^1.2.1",
+    "react-tagcloud": "^1.2.0"
+  },
+  "devDependencies": {}
+}
