@@ -27,7 +27,7 @@ Open a browser and enjoy <br/>
 http://localhost:3000/    
 ```
 
-If the DateBase is empty it will create some sample data
+If the DateBase is empty it will create some sample data. You can disable that by deleting the fixture.js file.
 
 ## How it Works:
 
