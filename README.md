@@ -3,7 +3,7 @@ A starter project for React &amp; Meteor. (I used @github.com/AdamBrodzinski/met
 
 
 <p align="center">
-  <img width="100%" src="public/images/meteor-react.png" alt="Meteor-React logo"/>
+  <img width="70%" src="public/images/meteor-react.png" alt="Meteor-React logo"/>
 </p>
 
 ## Installation:
