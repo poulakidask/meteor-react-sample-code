@@ -1,5 +1,6 @@
 # meteor-react-sample-code
-A starter project for React &amp; Meteor
+A starter project for React &amp; Meteor. (I used https://github.com/AdamBrodzinski/meteor-react-boilerplate as a base)
+
 
 Step 1  Create Employees <br/>
 
