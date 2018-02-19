@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import LoginButtons from './LoginButtons.jsx';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import {List, ListItem} from 'material-ui/List';
@@ -34,7 +33,7 @@ export default class Header extends React.Component {
     return (
       <header className='Header'>
         <AppBar
-            title={<Link to='/' > <span style={appBarStyles.title}>Sample Code</span></Link>}
+            title={<Link to='/' > <span style={appBarStyles.title}>App</span></Link>}
             style={appBarStyles}
             onTitleClick={this.titleClicked}
             onLeftIconButtonClick={this.handleTouchTap}

@@ -22,14 +22,15 @@ function About() {
               <Paper style={paperStyle} zDepth={1}  rounded={false}>
               <Subheader><h4>About</h4></Subheader>
 
-              Step 1  Create Employees <br/>
+              Step 1 Create Employees  <br/><br/>
 
-              Step 2 Create Tasks <br/>
+              Step 2 Create Tasks  <br/><br/>
 
-              Step 3 Assign Tasks to Employees <br/>
+              Step 3 Assign Tasks to Employees <br/><br/>  
 
-              Step 4 Marked them as finished and see which employee is the most productive.<br/>
-              (Note : Each employee get 1 point for every completed task!) <br/>
+              Step 4 Mark the Tasks as finished and see which employee is the most productive. <br/><br/>
+
+              (Note: Each employee gets 1 point for every completed task and his/her name becomes larger in the wordcloud)
 
               </Paper>
             </Col>
