@@ -40,6 +40,6 @@ Step 3 Assign Tasks to Employees
 
 Step 4 Mark the Tasks as finished and see which employee is the most productive. 
 
-(Each employee gets 1 point for every completed task and his/her name becomes larger in the wordcloud.)
+( Each employee gets 1 point for every completed task and the name becomes larger in the wordcloud )
 
 ```
