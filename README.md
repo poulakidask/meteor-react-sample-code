@@ -1,6 +1,5 @@
 # meteor-react-sample-code
-A starter project for React &amp; Meteor. (I used @github.com/AdamBrodzinski/meteor-react-boilerplate as a base)
-
+A starter project for React &amp; Meteor. 
 
 <p align="center">
   <img width="70%" src="public/images/meteor-react.png" alt="Meteor-React logo"/>
