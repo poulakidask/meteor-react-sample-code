@@ -1,8 +1,14 @@
+/**
+     * Displays all the Employees and the user can assign Multiple Tasks as a tag
+     * under an employe through the dropdown menu
+**/
+
+// React and Meteor libraries
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { createContainer } from 'meteor/react-meteor-data';
 
-//icons
+// UI Components
 import {List, ListItem} from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
@@ -11,7 +17,7 @@ import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
 import Close from 'material-ui/svg-icons/content/clear';
 
-import SnackbarComponent from '../components/SnackbarComponent.jsx';
+// Components
 import AssignTaskEmployee from './AssignTaskEmployee.jsx';
 
 
@@ -34,55 +40,14 @@ class AssignTasks extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state={
-      openSnackbar: false,
-      snackbarmessage:"",
-    }
-    this.handleAddEmployee = this.handleAddEmployee.bind(this);
-    this.removeEmployee = this.removeEmployee.bind(this);
-  }
-
-  handleAddEmployee() {
-    let name = this.refs.inputText.input.value;
-  
-
-    Meteor.call("addEmployee",name, (err) => {
-        if (err) {
-          SnackBar.alert("An error ocurred, please try agan.");
-          this.setState({openSnackbar: true,snackbarmessage: "There was an Error!"});
-          console.log(err);
-          return;
-        }
-        else {
-          this.refs.inputText.input.value="";
-          this.setState({openSnackbar: true, snackbarmessage: "New Employee Created"});
-        }
-      });
-
-  }
-
-  removeEmployee(employeeId) {
-    
-    Meteor.call("removeEmployee",employeeId, (err) => {
-          if (err) {
-            SnackBar.alert("An error ocurred, please try agan.");
-            this.setState({openSnackbar: true,snackbarmessage: "There was an Error!"});
-            console.log(err);
-            return;
-          }
-          else {
-            this.setState({openSnackbar: true, snackbarmessage: "Employee Removed"});
-          }
-        });
   }
 
   renderEmployees() {
     return this.props.employees.map((employee) => (
-         <AssignTaskEmployee key={employee._id} employee={employee} tasks={this.props.tasks} removeEmployee={this.removeEmployee} />
+         <AssignTaskEmployee key={employee._id} employee={employee} tasks={this.props.tasks}  />
     ));
   }
 
-  
   render() {
     return (
       <Grid fluid style={styles}>
@@ -94,9 +59,6 @@ class AssignTasks extends React.Component {
                 {this.renderEmployees()}
               </List>
             </Paper>
-
-            <SnackbarComponent open={this.state.openSnackbar} snackbarmessage={this.state.snackbarmessage}/>
-
           </Col>
         </Row>
       </Grid>

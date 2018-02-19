@@ -1,8 +1,14 @@
+/**
+     * Component for all the Employees 
+     * Here you can add and remove Employees
+**/
+
+// React and Meteor libraries
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { createContainer } from 'meteor/react-meteor-data';
 
-//icons
+// UI Components
 import {List, ListItem} from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
@@ -11,6 +17,7 @@ import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
 import Close from 'material-ui/svg-icons/content/clear';
 
+// Components
 import SnackbarComponent from '../components/SnackbarComponent.jsx';
 import SingleEmployee from './SingleEmployee.jsx';
 

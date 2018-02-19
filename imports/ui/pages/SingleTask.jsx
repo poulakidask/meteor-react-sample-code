@@ -1,4 +1,7 @@
+// React and Meteor libraries
 import React, { Component } from 'react';
+
+// UI Components
 import {ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import Close from 'material-ui/svg-icons/content/clear';

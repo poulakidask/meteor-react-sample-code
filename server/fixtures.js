@@ -1,14 +1,10 @@
 import '../imports/startup/server/main.js';
 
-
-// Tasks= new Mongo.Collection('tasks');
-// import { Employees } from '../imports/api/employees.js';
-
-// // if the database is empty on server start, create some sample data.
+// If the database is empty it creates some sample data.
 Meteor.startup(() => {
   if (Tasks.find().count() === 0 && Employees.find().count() === 0 ){
         
-        // Create Tasks
+      // Create Tasks
   		let taskId1 = Tasks.insert({description: "Backup Project"});
   		let taskId2 = Tasks.insert({description: "Deploy to server"});
   		let taskId3 = Tasks.insert({description: "Talk with customer in London"});

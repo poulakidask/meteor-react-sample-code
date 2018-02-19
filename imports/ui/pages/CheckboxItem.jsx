@@ -1,8 +1,13 @@
+// React and Meteor libraries
 import React, { Component } from 'react';
+
+// UI Components
 import {List,ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import Close from 'material-ui/svg-icons/content/clear';
 import Checkbox from 'material-ui/Checkbox';
+
+// Components
 import CheckboxItem from './CheckboxItem.jsx';
 
 

@@ -1,4 +1,7 @@
+// React and Meteor libraries
 import React, { Component } from 'react';
+
+// UI Components
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import { browserHistory } from 'react-router';
@@ -19,10 +22,6 @@ export default class LinkCard extends React.Component {
               <CardMedia overlay={<CardTitle title={this.props.cardContent.cardTitle}  />}>
                 <img src={this.props.cardContent.image} alt="" />
               </CardMedia>
-              {/*<CardTitle title={this.props.cardContent.cardTitle} subtitle="Card subtitle" />
-              <CardText>
-                {this.props.cardContent.cardDescription}
-              </CardText>*/}
               <CardActions>
                 <FlatButton label="Enter" fullWidth={true} containerElement={<Link to={`/${this.props.cardContent.cardLink}`} />}  />
               </CardActions>

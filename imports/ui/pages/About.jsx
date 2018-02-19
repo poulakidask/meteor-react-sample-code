@@ -1,4 +1,7 @@
+// React and Meteor libraries
 import React from 'react';
+
+// UI Components
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Paper from 'material-ui/Paper';
 import Subheader from 'material-ui/Subheader';
@@ -21,16 +24,17 @@ function About() {
             <Col xs={6} xsOffset={3}> 
               <Paper style={paperStyle} zDepth={1}  rounded={false}>
               <Subheader><h4>About</h4></Subheader>
+              <Subheader>  
+              Step 1 : Create Employees <br/>
 
-              Step 1 Create Employees  <br/><br/>
+              Step 2 : Create Tasks  <br/>
 
-              Step 2 Create Tasks  <br/><br/>
+              Step 3 : Assign Tasks to Employees <br/> 
 
-              Step 3 Assign Tasks to Employees <br/><br/>  
+              Step 4 : Mark the Tasks as finished and see which employee is the most productive. <br/>
 
-              Step 4 Mark the Tasks as finished and see which employee is the most productive. <br/><br/>
-
-              (Note: Each employee gets 1 point for every completed task and his/her name becomes larger in the wordcloud)
+              ( Each employee gets 1 point for every completed task and the name becomes larger in the wordcloud )
+              </Subheader>
 
               </Paper>
             </Col>

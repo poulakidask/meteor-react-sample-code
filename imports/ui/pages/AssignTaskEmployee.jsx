@@ -1,9 +1,18 @@
+/**
+     * Component for a specific Employee and the Tasks assigned to him/her
+**/
+
+// React and Meteor libraries
 import React, { Component } from 'react';
+
+// UI Components
 import {ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import Add from 'material-ui/svg-icons/content/add';
 import Remove from 'material-ui/svg-icons/content/remove';
 import Select from 'react-select';
+
+// Connect to db
 import { Tasks } from '../../api/tasks.js';
 
 
@@ -69,11 +78,11 @@ export default class AssignTaskEmployee extends Component {
     if(this.state.isOpen)
     {
       return (
-      <ListItem 
-	      leftIcon={<Remove onClick={this.toggleChecked}/>}>
-        {this.props.employee.name}<br/><br/>
+        <ListItem 
+	       leftIcon={<Remove onClick={this.toggleChecked}/>}>
+          {this.props.employee.name}<br/><br/>
 
-        <Select multi simpleValue value={this.employeeTasks()} placeholder="Select your tasks" options={this.allTasks()} onChange={this.handleSelectChange} />
+          <Select multi simpleValue value={this.employeeTasks()} placeholder="Select your tasks" options={this.allTasks()} onChange={this.handleSelectChange} />
 
         </ListItem>
       );

@@ -1,11 +1,11 @@
+// React and Meteor libraries
 import React, { Component } from 'react';
-import classNames from 'classnames';
 
-
+// UI Components
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
+// Components
 import LinkCard from './LinkCard.jsx';
-
 
 const cards = [
   {

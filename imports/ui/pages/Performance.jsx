@@ -1,19 +1,32 @@
+/**
+     * Component for the Performance
+     * Here you can mark a task as finished by clicking on the checkbox
+     * Each employee gets one point for every finished task
+     * The more points he/she has, the larger the name appears in the wordCloud
+**/
+
+// React and Meteor libraries
 import React, { Component } from 'react';
+
+// UI Components
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { TagCloud } from "react-tagcloud";
 import { createContainer } from 'meteor/react-meteor-data';
 import Paper from 'material-ui/Paper';
 import Subheader from 'material-ui/Subheader';
 
+//connect to db
 import { Employees } from '../../api/employees.js';
+
+// Components
 import PerformanceEmployee from './PerformanceEmployee.jsx';
 
 
 
 const options = {
-          luminosity: 'light',
-          hue: 'black'
-        };
+    luminosity: 'light',
+    hue: 'black'
+  };
 
 const paperStyle = {
   width: "100%",
@@ -61,7 +74,7 @@ class Performance extends Component {
         <Row>
             <Col xs={6} xsOffset={3}> 
               <Paper style={paperStyle} zDepth={1}  rounded={false}>
-              <Subheader><h4>Mark a task as finished when the employee has completed it!</h4></Subheader>
+              <Subheader><h4>Mark a task as finished and see who is the most productive!</h4></Subheader>
                 {this.renderEmployees()}
               </Paper>
             </Col>

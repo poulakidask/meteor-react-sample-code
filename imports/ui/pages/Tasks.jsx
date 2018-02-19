@@ -1,8 +1,14 @@
+/**
+     * Component for all the Tasks 
+     * Here you can add and remove Tasks
+**/
+
+// react and meteor libraries
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { createContainer } from 'meteor/react-meteor-data';
 
-//icons
+// UI Components
 import {List, ListItem} from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';

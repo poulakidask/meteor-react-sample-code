@@ -1,4 +1,7 @@
+// React and Meteor libraries
 import React from 'react';
+
+// UI Components
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Paper from 'material-ui/Paper';
 import Subheader from 'material-ui/Subheader';
